@@ -1,0 +1,25 @@
+cd /var/www/html
+
+rm -r html
+mkdir html
+
+git clone https://github.com/RafaShouman/shouman.xyz.git
+
+
+pm2 list
+pm2 status
+
+pm2 stop shouman
+pm2 delete shouman
+
+git clone https://github.com/RafaShouman/shouman.xyz.git
+
+yarn install
+yarn build
+
+pm2 start npm --name "shouman" -- start
+
+pm2 restart shouman
+
+
+81@Lacacoba
