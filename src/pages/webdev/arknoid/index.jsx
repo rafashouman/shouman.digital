@@ -5,9 +5,10 @@ import Arknoid from '@src/../components/Arknoid'; */
 
 export default function ArknoidPage() {
   return (
-    <>{/* <HomeLayout>
-    <Arknoid />
-  </HomeLayout> */}</>
-
+    <>
+    {/* <HomeLayout>
+      <Arknoid />
+    </HomeLayout> */}
+    </>
   );
 }
